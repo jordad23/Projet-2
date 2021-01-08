@@ -1,29 +1,156 @@
-h1
+img#logo
 {
+
+    width: 5%;
+   
+    
 
 }
 
-
-section,footer
+section
 {
-    background-color: white;
+    background-color: #F2F2F2;
     color: black;
     
 	
 
-    width: 80%; 
-    margin: auto; 
-    border: 1px solid black;
+    width: 92%; 
+    margin: auto;
+    border: 1px solid white;
     text-align: justify;
-    padding: 12px;		
+    padding: 12px;
     margin-bottom: 20px;
-    background-color: grey;
+    background-color: #F2F2F2;
+    border-radius: 1rem ;
+
+}    
+
+footer
+{
+    background-color: #F2F2F2;
+    color: black;
+    
+	
+
+    width: 98%; 
+    margin: auto;
+    border: 1px solid white;
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    
+
 }    
     
+
+
+
+
 a
 {
-    margin-right: 150px;
-    padding-right: 200px
-    
+    widows: 50%;
+    margin-left: 10px;
+    padding: 30px;
+     color:blue;
+
+
 }
 
+
+article
+{
+    border-radius: 1rem;
+    background-color: white;
+    padding: 3px;
+    margin: 15px;
+}
+
+article img
+{
+    border-radius: 1rem 1rem 0 0;
+}
+
+main section h2, main section > strong
+{
+  width: 100%;
+}
+
+.stars 
+{
+  font-weight: bold;
+  font-family: 'Font Awesome 5 Free';
+}
+
+.stars::before
+{
+  color:blue;
+}
+
+.stars::after
+{
+  color: #F2F2F2;
+}
+
+.fiveStars::before
+{
+  content:"\f005 \f005 \f005 \f005 \f005 ";
+}
+.fourStars::before
+{
+  content:"\f005 \f005 \f005 \f005 ";
+}
+.fourStars::after
+{
+  content:"\f005 ";
+
+}
+
+.threeStars::before
+{
+    content:"\f005 \f005 \f005 ";
+}
+.threeStars::after
+{
+  content:"\f005\f005 ";
+
+}
+
+@media screen and (min-width:768px)
+{
+  main 
+{
+    display: flex;
+}
+
+main section 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 30%;
+}
+  
+ 
+
+ main section#hebergements 
+  {
+    width: 65%;
+    border-radius: 1rem  ;
+
+  }
+
+
+  section#activites  
+  {
+    width: 95%;
+    border-radius: 1rem ;
+    
+  }
+
+
+  section#populaires
+  {
+    width: 25%;
+    border-radius: 1rem ;
+  }
