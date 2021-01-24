@@ -1,12 +1,70 @@
 img#logo
 {
 
-    width: 5%;
+    width: 25%;
    
     
 
 }
 
+nav
+{
+  display: grid;
+  grid-template:
+      "logo inscrire"
+      "hebergements activites";
+      width:100%;
+/*         border:1px solid green; */
+      justify-items:stretch;
+}
+
+nav a
+{
+  border-top:2px solid transparent;
+  text-align:center;
+/*     border: 1px solid red; */
+  width:50%;
+}
+
+nav a:hover
+{
+  border-top:2px solid blue;
+}
+
+
+nav a:first-of-type {
+  grid-area: logo;
+  width:50%;
+}
+
+nav a:first-of-type:hover{
+  border-top:2px solid transparent;
+}
+
+
+nav a:nth-of-type(2) {
+  grid-area: hebergements;
+}
+nav a:nth-of-type(3) {
+  grid-area: activites;
+}
+
+nav a:last-of-type {
+  grid-area: inscrire;
+}
+
+@media screen AND (min-width:768px){
+  nav
+{
+      grid-template: "logo  hebergements activites inscrire";
+}
+  nav a
+{
+      width:17%;
+}
+  nav a:first-of-type {
+  width:50%;
+}
 
 section
 {
@@ -32,7 +90,7 @@ footer
     color: black;
     
 	
-
+    height: 175px;
     width: 98%; 
     margin: auto;
     border: 1px solid white;
@@ -40,10 +98,31 @@ footer
     padding: 12px;
     margin-bottom: 20px;
     background-color: #F2F2F2;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 4rem 12rem 4rem 4rem 12rem;
+   
+    
+}
+
+footer ul
+{
+    list-style-type: none;
+   
+
+}
+
+footer ul::before
+{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    /* margin-left:-15px; */
+    /* margin-bottom: 15px; */
+}
     
 
-}    
-    
 
 p.info::before {
   content: "\f129";
@@ -369,4 +448,8 @@ main section
    
     margin: 0;
 }
-}
+
+
+
+
+
