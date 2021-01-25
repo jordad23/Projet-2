@@ -18,17 +18,20 @@ nav
       justify-items:stretch;
 }
 
-nav a
+nav a:hover
 {
   border-top:2px solid transparent;
   text-align:center;
 /*     border: 1px solid red; */
   width:50%;
+  color:black;
 }
 
 nav a:hover
 {
-  border-top:2px solid blue;
+  border-top:2px  solid   rgb(0, 102, 255);
+  
+  
 }
 
 
@@ -44,6 +47,7 @@ nav a:first-of-type:hover{
 
 nav a:nth-of-type(2) {
   grid-area: hebergements;
+  
 }
 nav a:nth-of-type(3) {
   grid-area: activites;
@@ -127,7 +131,7 @@ footer ul::before
 p.info::before {
   content: "\f129";
   font-family: "Font Awesome 5 Free";
-  color: blue;
+  color:rgb(0, 102, 255) ;
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -140,19 +144,50 @@ p.info::before {
 }
 
 
-
+.fa-chart-line
+{
+  content: "f201 / 10f201";
+  font-family: "Font Awesome 5 Free"; 
+  color:black ;
+  display: inline-flex;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 1rem;
+ 
+}
 
 a
 {
     text-decoration:none; 
     padding: 25px;
-    color:blue;
+    color:rgb(0, 102, 255);
     float:right;
   
 }
  
+button
+{
+  color: white ;
+  background-color:   rgb(0, 102, 255)  ;
+  border: none;
+  display: inline-flex;
+  width: 5.5rem;
+  height: 2.2rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 12px 12px  0;
+  
+  margin-right: 4rem;
 
+}
 
+input
+{
+  width: 10rem;
+  height: 2.2rem;
+
+}
 
 label {
   display: block;
@@ -162,6 +197,23 @@ label {
 input,
 label {
   margin: .4rem 0;
+}
+
+.fa-map-marker-alt
+{
+  content: "f3c5";
+  font-family: "Font Awesome 5 Free"; 
+  border: none;
+  display: inline-flex;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 0  0  12px;
+  background-color: gray;
+  
+
 }
 
 
@@ -174,7 +226,7 @@ h4
 {
   content: "\53a";
   font-family: "Font Awesome 5 Free"; 
-  color: blue;
+  color: rgb(0, 102, 255) ;
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -191,7 +243,7 @@ h4
 {
   content: "\f1ae";
   font-family: "Font Awesome 5 Free"; 
-  color: blue;
+  color: rgb(0, 102, 255) ;
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -202,13 +254,14 @@ h4
   border-radius: 50%;
   margin-right: 1rem;
   
+  
 }
 
 .fa-heart
 {
   content: "\f004";
   font-family: "Font Awesome 5 Free"; 
-  color: blue;
+  color: rgb(0, 102, 255) ;
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -225,7 +278,7 @@ h4
 {
   content: "\f6d3";
   font-family: "Font Awesome 5 Free"; 
-  color: blue;
+  color: rgb(0, 102, 255) ;
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -301,7 +354,7 @@ main section h2, main section > strong
 
 .stars::before
 {
-  color:blue;
+  color :rgb(0, 102, 255) ;
 }
 
 .stars::after
@@ -449,7 +502,15 @@ main section
     margin: 0;
 }
 
+#activites article img
+{
+  border-radius: 1rem 1rem 0 0;
+    height: 8rem;
+    width: 17rem;
+    object-fit: cover;
+    border: none;
 
+}
 
 
 
