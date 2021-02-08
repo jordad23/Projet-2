@@ -1,17 +1,18 @@
-body
-{
-  font-family: "raleway";
-}
 
 img#logo
 {
 
-    width: 26%;
+    max-width: 100px;
     margin-left: -25px;
     
 
 }
 
+body
+{
+  font-family: "raleway";
+  max-width: 300px;
+}
 
 nav
 {
@@ -19,7 +20,7 @@ nav
   grid-template:
       "logo inscrire"
       "hebergements activites";
-      width:100%;
+      max-width: 300px;
 /*         border:1px solid green; */
       justify-items:stretch;
 }
@@ -30,7 +31,7 @@ nav a:hover
   border-top:2px solid transparent;
   text-align:center;
 /*     border: 1px solid red; */
-  width:50%;
+max-width: 300px;
   color:black;
 }
 
@@ -47,7 +48,7 @@ nav a:hover
 nav a:first-of-type
  {
   grid-area: logo;
-  width:50%;
+  max-width: 300px;
 }
 
 
@@ -55,6 +56,7 @@ nav a:first-of-type
 nav a:first-of-type:hover
 {
   border-top:2px solid transparent;
+  max-width: 300px;
 }
 
 
@@ -62,6 +64,7 @@ nav a:first-of-type:hover
 nav a:nth-of-type(2) 
 {
   grid-area: hebergements;
+  max-width: 300px;
   
 }
 
@@ -70,6 +73,7 @@ nav a:nth-of-type(2)
 nav a:nth-of-type(3) 
 {
   grid-area: activites;
+  max-width: 300px;
 }
 
 
@@ -77,11 +81,12 @@ nav a:nth-of-type(3)
 nav a:last-of-type 
 {
   grid-area: inscrire;
+  max-width: 300px;
 }
 
 
 
-@media screen AND (min-width:768px)
+@media screen AND (min-width:300px)
 {
   nav
 {
@@ -98,7 +103,7 @@ nav a:last-of-type
 
   nav a:first-of-type
 {
-  width:50%;
+    max-width: 300px;
 }
 
 
@@ -107,7 +112,7 @@ section
 {
     
     color: black;
-    width: 92%; 
+    max-width: 300px;
     margin: auto;
     border: 1px solid white;
     text-align: justify;
@@ -128,7 +133,6 @@ footer
     
 	
     height: 175px;
-    width: 99%; 
     margin: auto;
     border: 1px solid white;
     text-align: justify;
@@ -139,7 +143,7 @@ footer
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 4rem 12rem 4rem 4rem 12rem;
-   
+    max-width: 300px;
     
 }
 
@@ -149,7 +153,7 @@ footer
 footer ul
 {
     list-style-type: none;
-   
+    max-width: 300px;
 
 }
 
@@ -372,6 +376,7 @@ article h3,
 article p,
 article div {
   padding: 0 1rem;
+  
 }
 
 
@@ -384,6 +389,7 @@ article img
     width: 16rem;
     object-fit: cover;
     border: 3px solid white;
+    
   
 }
 
@@ -393,7 +399,7 @@ article img
   display: grid;
   grid-template-columns: 9rem auto;
   grid-template-rows: auto 33% 33%;
-  width: 450px;
+  max-width: 300px;
 }
 
 
@@ -401,7 +407,6 @@ article img
 
 #populaires article img {
   height: 10rem;
-  width: 9rem;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -413,7 +418,7 @@ article img
 
 main section h2, main section > strong
 {
-  width: 100%;
+  
   display: flex;
   justify-content: space-between;
 }
@@ -480,7 +485,7 @@ main section h2, main section > strong
 
 
 
-@media screen and (min-width:768px)
+@media screen and (min-width:300px)
 {
   main 
 {
@@ -494,121 +499,18 @@ main section
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 30%;
+    
 }
   
  
 
  main section#hebergements 
   {
-    width: 65%;
+
     border-radius: 1rem  ;
     height: 610px;
   }
 
-
-  section#activites  
-  {
-    
-    width: 98%;
-    border-radius: 1rem ;
-    background-color:white;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 4rem 12rem 4rem 4rem 12rem;
-  }
-
-
-  section#populaires
-  {
-    width: 25%;
-    border-radius: 1rem ;
-  }
-
-
-  
-  h2#Activités
-{
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-
-
-#activites article:nth-of-type(1)
-{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 6;
-}
-
-
-
-#activites article:nth-of-type(2) 
-{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-
-
-
-#activites article:nth-of-type(3) 
-{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-/*     grid-row-end: 6; */
-}
-
-
-
-#activites article:nth-of-type(4) 
-{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 6;
-}
-
-
-
-#activites article:nth-of-type(1) img, #activites article:nth-of-type(4) img
-{
-  height: 29rem;
-}
-
-
-
-#activites article:nth-of-type(2) img, #activites article:nth-of-type(6) img
-{
-  height: 12rem;
-}
-
-
-
-
-#activites article:nth-of-type(5) 
-{
-
-    grid-column-start: 4;
-    grid-column-end: 5;
-/*     grid-row-start: 2;
-    grid-row-end: 6; */
-}
-
-
-
-
-#activites article:nth-of-type(6)
-{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 6;
-}
 
 
 
@@ -639,7 +541,6 @@ main section
 {
   border-radius: 1rem 1rem 0 0;
     height: 8rem;
-    width: 18rem;
     object-fit: cover;
     border: none;
 
@@ -659,7 +560,6 @@ main section
 .filtre::before 
 {
   background-color: rgb(203, 222, 231);
-  width: 2rem;
   height: 2rem;
   display: flex;
   font-family: 'Font Awesome 5 Free';
