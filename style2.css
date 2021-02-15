@@ -11,7 +11,26 @@ img#logo
 body
 {
   font-family: "raleway";
-  max-width: 300px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1
+{
+  font-size:x-large  ;
+}
+
+label
+{
+width: 125%;
+}
+
+
+p
+{
+  font-size: 95%; 
+  
 }
 
 nav
@@ -20,10 +39,11 @@ nav
   grid-template:
       "logo inscrire"
       "hebergements activites";
-      max-width: 300px;
+      width: 100%;
 /*         border:1px solid green; */
       justify-items:stretch;
 }
+
 
 
 nav a:hover
@@ -31,7 +51,7 @@ nav a:hover
   border-top:2px solid transparent;
   text-align:center;
 /*     border: 1px solid red; */
-max-width: 300px;
+max-width: 380px;
   color:black;
 }
 
@@ -39,7 +59,7 @@ max-width: 300px;
 
 nav a:hover
 {
-  border-top:2px  solid  rgb(0, 102, 255);
+  border-bottom:2px  solid  rgb(0, 102, 255);
   
   
 }
@@ -48,7 +68,7 @@ nav a:hover
 nav a:first-of-type
  {
   grid-area: logo;
-  max-width: 300px;
+  
 }
 
 
@@ -56,7 +76,7 @@ nav a:first-of-type
 nav a:first-of-type:hover
 {
   border-top:2px solid transparent;
-  max-width: 300px;
+  
 }
 
 
@@ -64,7 +84,8 @@ nav a:first-of-type:hover
 nav a:nth-of-type(2) 
 {
   grid-area: hebergements;
-  max-width: 300px;
+  margin-top: 75px;
+  margin-left: -135px;
   
 }
 
@@ -73,7 +94,9 @@ nav a:nth-of-type(2)
 nav a:nth-of-type(3) 
 {
   grid-area: activites;
-  max-width: 300px;
+  margin-top: 75px;
+  margin-left: 15px;
+  
 }
 
 
@@ -81,16 +104,17 @@ nav a:nth-of-type(3)
 nav a:last-of-type 
 {
   grid-area: inscrire;
-  max-width: 300px;
+  margin-top: 20px;
+  margin-left: -115px;
 }
 
 
 
-@media screen AND (min-width:300px)
+@media screen AND (min-width:380px)
 {
   nav
 {
-      grid-template: "logo  hebergements activites inscrire";
+  grid-template: "logo  hebergements activites inscrire";
 }
 
 
@@ -103,7 +127,7 @@ nav a:last-of-type
 
   nav a:first-of-type
 {
-    max-width: 300px;
+    width: 50%;
 }
 
 
@@ -112,66 +136,54 @@ section
 {
     
     color: black;
-    max-width: 300px;
+    max-width: 380px;
     margin: auto;
     border: 1px solid white;
     text-align: justify;
     padding: 20px;
     margin-bottom: 20px;
-    background-color:#F2F2F2 ;
     border-radius: 1rem ;
+    
 
 }    
+#populaires 
+{
+  background-color:#F2F2F2 ;
+ 
 
+}
 
-
+#activites article img {
+  border-radius: 1rem 1rem 0 0;
+  height: 8rem;
+  width: 18rem;
+  object-fit: cover;
+  border: none;
+}
 
 footer
 {
     background-color: #F2F2F2;
-    color: black;
-    
-	
-    height: 175px;
+    color:black;
+	  height: 605px;
     margin: auto;
     border: 1px solid white;
     text-align: justify;
     padding: 12px;
     margin-bottom: 20px;
-    background-color: #F2F2F2;
+    background-color:#F2F2F2 ;
     line-height: 30px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 4rem 12rem 4rem 4rem 12rem;
-    max-width: 300px;
+    max-width: 380px;
     
 }
 
 
 
 
-footer ul
-{
-    list-style-type: none;
-    max-width: 300px;
 
-}
-
-
-
-
-footer ul::before
-{
-    content:attr(aria-label);
-    font-size:120%;
-    font-weight:bold;
-    /* margin-left:-15px; */
-    /* margin-bottom: 15px; */
-}
-    
-
-
-p.info::before {
+p.info::before
+ {
   content: "\f129";
   font-family: "Font Awesome 5 Free";
   color:rgb(0, 102, 255);
@@ -188,35 +200,31 @@ p.info::before {
 
 
 
-.fa-chart-line
+.fa-chart-line 
 {
   content: "f201 / 10f201";
-  font-family: "Font Awesome 5 Free"; 
+  font-family: "Font Awesome 5 Free";
   color: black;
   display: inline-flex;
   font-weight: bold;
   border-radius: 50%;
   margin-right: 1rem;
- 
 }
 
 
-
-a
+a 
 {
-    text-decoration:none; 
-    padding: 25px;
-    color:rgb(0, 102, 255);
-    float:right;
-  
+  text-decoration: none;
+  padding: 25px;
+  color: rgb(0, 102, 255);
+  float: right;
 }
- 
 
 
-button
+button 
 {
-  color: white ;
-  background-color:   rgb(0, 102, 255)  ;
+  color: white;
+  background-color: rgb(0, 102, 255);
   border: none;
   display: inline-flex;
   width: 5.5rem;
@@ -224,13 +232,9 @@ button
   font-weight: bold;
   justify-content: center;
   align-items: center;
-  border-radius: 0 12px 12px  0;
-  
+  border-radius: 0 12px 12px 0;
   margin-right: 4rem;
-
 }
-
-
 
 input
 {
@@ -245,21 +249,14 @@ label
 {
   display: flex;
   font-size: 1rem;
-}
-
-
-
-
-label 
-{
   margin: .4rem 0;
 }
 
 
 .fa-map-marker-alt
-{
+ {
   content: "f3c5";
-  font-family: "Font Awesome 5 Free"; 
+  font-family: "Font Awesome 5 Free";
   border: none;
   display: inline-flex;
   width: 2.2rem;
@@ -267,25 +264,17 @@ label
   font-weight: bold;
   justify-content: center;
   align-items: center;
-  border-radius: 12px 0  0  12px;
+  border-radius: 12px 0 0 12px;
   background-color: #F2F2F2;
-  
-
 }
 
 
 
-h4
-{
-  display: inline;
-}
-
-
-.fa-money-bill-wave
+.fa-money-bill-wave 
 {
   content: "\53a";
-  font-family: "Font Awesome 5 Free"; 
-  color: rgb(0, 102, 255) ;
+  font-family: "Font Awesome 5 Free";
+  color: rgb(0, 102, 255);
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -295,16 +284,14 @@ h4
   align-items: center;
   border-radius: 50%;
   margin-right: 1rem;
-  
 }
 
 
-
-.fa-child
+.fa-child 
 {
   content: "\f1ae";
-  font-family: "Font Awesome 5 Free"; 
-  color: rgb(0, 102, 255) ;
+  font-family: "Font Awesome 5 Free";
+  color: rgb(0, 102, 255);
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -314,17 +301,15 @@ h4
   align-items: center;
   border-radius: 50%;
   margin-right: 1rem;
-  
-  
 }
 
 
 
 .fa-heart
-{
+ {
   content: "\f004";
-  font-family: "Font Awesome 5 Free"; 
-  color: rgb(0, 102, 255) ;
+  font-family: "Font Awesome 5 Free";
+  color: rgb(0, 102, 255);
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -334,16 +319,14 @@ h4
   align-items: center;
   border-radius: 50%;
   margin-right: 1rem;
-  
 }
 
 
-
-.fa-dog
+.fa-dog 
 {
   content: "\f6d3";
-  font-family: "Font Awesome 5 Free"; 
-  color: rgb(0, 102, 255) ;
+  font-family: "Font Awesome 5 Free";
+  color: rgb(0, 102, 255);
   border: 1px solid grey;
   display: inline-flex;
   width: 1.5rem;
@@ -353,17 +336,12 @@ h4
   align-items: center;
   border-radius: 50%;
   margin-right: 1rem;
-  
-  
-  
 }
 
-
-
 article
-{
+ {
   border-radius: 1rem;
-  background-color:white;
+  background-color: white;
   /* padding: 3px; */
   margin: 0 auto 15px auto;
   width: fit-content;
@@ -371,42 +349,36 @@ article
 }
 
 
-
-article h3,
-article p,
-article div {
+article h3, article p, article div
+ {
   padding: 0 1rem;
-  
 }
-
 
 
 article img
-{
-  
-    border-radius: 1rem 1rem 0 0;
-    height: 8rem;
-    width: 16rem;
-    object-fit: cover;
-    border: 3px solid white;
-    
-  
+ {
+  border-radius: 1rem 1rem 0 0;
+  height: 8rem;
+  width: 16rem;
+  object-fit: cover;
+  border: 5px solid white;
 }
 
 
-
-#populaires article {
+#populaires article
+ {
   display: grid;
-  grid-template-columns: 9rem auto;
-  grid-template-rows: auto 33% 33%;
-  max-width: 300px;
+  grid-template-columns: 6rem 13rem;
+  grid-template-rows:  auto 25% 60%;
+  width: 300px;
+  height: 140px;
 }
 
 
-
-
-#populaires article img {
-  height: 10rem;
+#populaires article img 
+{
+  height: 8rem;
+  width: 6.5rem;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -415,13 +387,13 @@ article img
 }
 
 
-
-main section h2, main section > strong
+main section h2, main section>strong 
 {
-  
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 
 
 
@@ -433,123 +405,61 @@ main section h2, main section > strong
 }
 
 
-
-.stars::before
+.stars::before 
 {
-  color :rgb(0, 102, 255) ;
+  color: rgb(0, 102, 255);
 }
 
 
-
 .stars::after
-{
+ {
   color: #F2F2F2;
 }
 
 
-
 .fiveStars::before
-{
-  content:"\f005 \f005 \f005 \f005 \f005 ";
+ {
+  content: "\f005 \f005 \f005 \f005 \f005 ";
 }
-
 
 
 .fourStars::before
-{
-  content:"\f005 \f005 \f005 \f005 ";
+ {
+  content: "\f005 \f005 \f005 \f005 ";
 }
-
 
 
 .fourStars::after
-{
-  content:"\f005 ";
-
+ {
+  content: "\f005 ";
 }
-
 
 
 .threeStars::before
-{
-    content:"\f005 \f005 \f005 ";
+ {
+  content: "\f005 \f005 \f005 ";
 }
-
 
 
 .threeStars::after
-{
-  content:"\f005\f005 ";
-
-}
-
-
-
-@media screen and (min-width:300px)
-{
-  main 
-{
-    display: flex;
-}
-
-
-
-main section 
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
-  
- 
-
- main section#hebergements 
-  {
-
-    border-radius: 1rem  ;
-    height: 610px;
-  }
-
-
-
-
-
-#activites article img 
-{
-/*     height: 100%; */
-}
-
-
-
-#activites article 
-{
-    height: 100%;
-    /* justify-self: stretch; */
-}
-
-
-#activites H3  
-{
-    /* height: 2rem; */
-   
-    margin: 0;
-}
-
-
-#activites article img
-{
-  border-radius: 1rem 1rem 0 0;
-    height: 8rem;
-    object-fit: cover;
-    border: none;
-
-}
-
-
-.filtre
  {
-  border: 2px solid  #F2F2F2;
+  content: "\f005\f005 ";
+}
+
+
+
+section#populaires
+ {
+  width: 85%;
+  border-radius: 1rem;
+}
+
+
+
+
+.filtre 
+{
+  border: 2px solid #F2F2F2;
   width: fit-content;
   display: inline-flex;
   border-radius: 1rem;
@@ -557,9 +467,11 @@ main section
   padding-right: .5rem;
 }
 
+
 .filtre::before 
 {
   background-color: rgb(203, 222, 231);
+  width: 2rem;
   height: 2rem;
   display: flex;
   font-family: 'Font Awesome 5 Free';
@@ -569,33 +481,36 @@ main section
   align-items: center;
 }
 
-.filtre.eco::before
+
+.filtre.eco::before 
 {
-   content:"\f53a";
-   color: rgb(0, 102, 255) ;
-   
+  content: "\f53a";
+  color: rgb(0, 102, 255);
 }
 
-.filtre.familial::before 
-{
-  content:"\f1ae";
-  color: rgb(0, 102, 255) ;
+
+.filtre.familial::before
+ {
+  content: "\f1ae";
+  color: rgb(0, 102, 255);
 }
+
 
 .filtre.romantique::before 
-{ 
-  content:"\f004";
-  color: rgb(0, 102, 255) ;
-}
-
-.filtre.animaux::before 
 {
-   content:"\f6d3";
-   color: rgb(0, 102, 255) ;
+  content: "\f004";
+  color: rgb(0, 102, 255);
 }
 
-div:hover
+
+.filtre.animaux::before
+ {
+  content: "\f6d3";
+  color: rgb(0, 102, 255);
+}
+
+
+div:hover 
 {
   color: red;
-
 }
